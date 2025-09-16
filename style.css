@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container_size {
+    display: block;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+}
+
+.img_logo {
+    width: 142px;
+    height: 64px;
+}
+
+.menu_block {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu_a {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color .25s ease;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header_banner {
+    background-color: #029648;
+    height: 500px;
+    background-image: url(https://jetedu-telegram-bot.vercel.app/effect_banner3.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.head_info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 40px;
+}
+
+.hi_title {
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hi_bio {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    width: 550px;
+    margin-bottom: 20px;
+}
+
+.hi_button {
+    height: 50px;
+    padding: 0 32px;
+    border-radius: 48px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.hi_button_text {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color .25s ease;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.course_block {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 40px;
+}
+
+.course_title {
+    margin: 60px 0;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 5rem;
+    letter-spacing: -.02em;
+    color: #000;
+}
+
+/* Desktop: grid ko‘rinishida */
+.course_info_block {
+    display: flex;
+    column-gap: 14px;
+    row-gap: 24px;
+    flex-wrap: wrap;
+}
+
+.cib_top {
+    width: 306px;
+    height: 220px;
+    background-color: #fafafa;
+    /* background-color: #029648; */
+    border: 1px solid #e8e8e8;
+    border-radius: 15px 15px 0 0;
+}
+
+.cib_top_text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    color: #000;
+    /* oldingi #fff o‘rniga ko‘rinadigan rang */
+}
+
+.cib_bottom {
+    width: 306px;
+    height: 160px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 0 0 15px 15px;
+    padding: 20px;
+}
+
+.cib_bottom_title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.reklama_banner {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 60px 40px;
+}
+
+.reklama_banner_block {
+    width: 100%;
+    height: 250px;
+    background-color: #029648;
+    border-radius: 20px;
+    padding: 50px;
+    background-image: url(/img/main.png);
+    background-size: 84%;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.rbb_title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 120%;
+    letter-spacing: -.02em;
+}
+
+.rbb_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: -.02em;
+    margin: 12px 0 29px;
+    width: 80%;
+}
+
+.rbb_button_b {
+    background: #fff;
+    border-radius: 1rem;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 116.3%;
+    padding: 13px 23px 14px 24px;
+    border: none;
+    outline: none;
+    transition: .3s;
+    color: #05793d;
+    cursor: pointer;
+}
+
+.rbb_button_b:hover {
+    background: #efefef;
+}
+
+.hashtag_block {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 60px 40px;
+}
+
+.hashtag_block_title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 5rem;
+    letter-spacing: -.02em;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.hbb_mains {
+    display: inline-block;
+    border: 1px solid #e3e1e1;
+    padding: 13px 30px 13px 33px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    border-radius: 100px;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.hbb_mains:hover {
+    color: #fff;
+    background-color: #05793d;
+    border: 1px solid #05793d;
+}
+
+.hbb_mains:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.hbb_mains:hover span {
+    filter: brightness(0) invert(1);
+}
+
+.hbbm_item {
+    display: flex;
+    align-items: center;
+}
+
+.hbbm_item span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222;
+    width: max-content;
+}
+
+.hbb_mains_img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.map_block {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 60px 40px;
+}
+
+footer {
+    background-color: #029648;
+}
+
+.footer {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 60px 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom_title {
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.bottom_info {
+    margin-top: 30px;
+}
+
+.fm_continer {
+    display: flex;
+    flex-direction: column;
+}
+
+.fm_continer_a {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color .25s ease;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.fm_shartlar a {
+    cursor: pointer;
+    text-decoration: none;
+    transition: color .25s ease;
+    color: #fff;
+}
+
+.footer_phone {
+    font-size: 34px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_phone_a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color .25s ease;
+}
+
+.web {
+    background-color: #ff6740;
+    background-image: url(/img/html_course.svg);
+    background-size: 50%;
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+}
+
+.python {
+    background-color: #163e5f;
+    background-image: url(/img/python_course.svg);
+    background-size: 50%;
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+}
+
+.java {
+    background-color: #ea2d2e;
+    background-image: url(/img/java_course.svg);
+    background-size: 50%;
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+}
+
+.excel {
+    background-color: #1f6de0;
+    background-image: url(/img/word_course.svg);
+    background-size: 55%;
+    background-position: 90% 50%;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.csharp {
+    background-color: #9100a7;
+    background-image: url(/img/csharp_course.svg);
+    background-size: 50%;
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+}
+
+.odins {
+    background-color: #ffc937;
+    background-image: url(/img/1c_courser.svg);
+    background-size: 90%;
+    background-position: 230% 50%;
+    background-repeat: no-repeat;
+}
+
+/* Kursor holati (faqat sichqoncha bor qurilmalar uchun) */
+@media (pointer: fine) {
+    .course_info_block {
+        cursor: grab;
+    }
+
+    .course_info_block.active {
+        cursor: grabbing;
+    }
+}

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JETEDU — Kurslar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=uz_UZ&apikey=3a1fce0f-7c6a-4075-9f1b-58918b1b76c4"
+        type="text/javascript"></script>
+    <style>
+        #map {
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header" class="header">
+        <div class="Logo">
+            <img src="img/logo.svg" alt="JETEDU logo" class="img_logo">
+        </div>
+        <div class="menu_block">
+            <a href="#" class="menu_a">Kurslar</a>
+            <a href="#" class="menu_a">Biz haqimizda</a>
+            <a href="#" class="menu_a">Manzil</a>
+        </div>
+    </div>
+
+    <div class="header_banner">
+        <div class="head_info">
+            <div class="hi_title"><span>Kelajakni dasturlang</span></div>
+            <div class="hi_bio">
+                <span>Bepul maslahat olish uchun so'rov qoldiring va biz sizga to'g'ri tanlov qilishga yordam
+                    beramiz</span>
+            </div>
+            <div class="hi_button">
+                <a href="#" class="hi_button_text"><span>Maslahat olish</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="course_block">
+        <div class="course_title"><span>Kurslar</span></div>
+
+        <!-- Diqqat: bu konteynerdan "scroll" klassini olib tashladik.
+         Carousel rejimi endi media.css orqali avtomatik yoqiladi. -->
+        <div class="course_info_block">
+            <div class="cib_block">
+                <div class="cib_top excel">
+                    <div class="cib_top_text" style="color: #fff;">
+                        <div class="cib_tt">
+                            <span>Ta'lim tili:</span><br>
+                            <span style="font-weight:800;">O'zbekcha</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cib_bottom">
+                    <div class="cib_bottom_title"><span>Kompyuter savodxonligi</span></div>
+                    <div>
+                        <span style="font-weight:600;">O'qish davomiyligi:</span>
+                        <span>6 oy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cib_block">
+                <div class="cib_top web">
+                    <div class="cib_top_text" style="color: #fff;">
+                        <div class="cib_tt">
+                            <span>Ta'lim tili:</span><br>
+                            <span style="font-weight:800;">O'zbekcha</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cib_bottom">
+                    <div class="cib_bottom_title"><span>Web dasturlash (Frontend)</span></div>
+                    <div>
+                        <span style="font-weight:600;">O'qish davomiyligi:</span>
+                        <span>6 oy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cib_block">
+                <div class="cib_top python">
+                    <div class="cib_top_text">
+                        <div class="cib_tt" style="color: #fff;">
+                            <span>Ta'lim tili:</span><br>
+                            <span style="font-weight:800;">O'zbekcha</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cib_bottom">
+                    <div class="cib_bottom_title "><span>Pythonda dasturlash</span></div>
+                    <div>
+                        <span style="font-weight:600;">O'qish davomiyligi:</span>
+                        <span>6 oy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cib_block">
+                <div class="cib_top java">
+                    <div class="cib_top_text">
+                        <div class="cib_tt" style="color: #fff;">
+                            <span>Ta'lim tili:</span><br>
+                            <span style="font-weight:800;">O'zbekcha</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cib_bottom">
+                    <div class="cib_bottom_title"><span>JAVA dasturlash tili</span></div>
+                    <div>
+                        <span style="font-weight:600;">O'qish davomiyligi:</span>
+                        <span>6 oy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cib_block">
+                <div class="cib_top csharp">
+                    <div class="cib_top_text">
+                        <div class="cib_tt" style="color: #fff;">
+                            <span>Ta'lim tili:</span><br>
+                            <span style="font-weight:800;">O'zbekcha</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cib_bottom">
+                    <div class="cib_bottom_title"><span>C# dasturlash tili</span></div>
+                    <div>
+                        <span style="font-weight:600;">O'qish davomiyligi:</span>
+                        <span>6 oy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cib_block">
+                <div class="cib_top odins">
+                    <div class="cib_top_text">
+                        <div class="cib_tt">
+                            <span>Ta'lim tili:</span><br>
+                            <span style="font-weight:800;">O'zbekcha</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cib_bottom">
+                    <div class="cib_bottom_title"><span>1C dasturlash</span></div>
+                    <div>
+                        <span style="font-weight:600;">O'qish davomiyligi:</span>
+                        <span>6 oy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cib_block">
+                <div class="cib_top">
+                    <div class="cib_top_text">
+                        <div class="cib_tt">
+                            <span>Ta'lim tili:</span><br>
+                            <span style="font-weight:800;">O'zbekcha</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cib_bottom">
+                    <div class="cib_bottom_title"><span>Robototexnika</span></div>
+                    <div>
+                        <span style="font-weight:600;">O'qish davomiyligi:</span>
+                        <span>6 oy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cib_block">
+                <div class="cib_top">
+                    <div class="cib_top_text">
+                        <div class="cib_tt">
+                            <span>Ta'lim tili:</span><br>
+                            <span style="font-weight:800;">O'zbekcha</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cib_bottom">
+                    <div class="cib_bottom_title"><span>Texnologik jarayonlarni avtomatlashtirish</span></div>
+                    <div>
+                        <span style="font-weight:600;">O'qish davomiyligi:</span>
+                        <span>6 oy</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="reklama_banner">
+        <div class="reklama_banner_block">
+            <div class="rbb_title"><span>Biz sizga kasb tanlashda yordam beramiz</span></div>
+            <div class="rbb_text">
+                <span>Bepul maslahat olish uchun so'rov qoldiring va biz sizga to'g'ri tanlov qilishga yordam
+                    beramiz</span>
+            </div>
+            <div class="rbb_button">
+                <button class="rbb_button_b" type="button">Maslahat olish</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="hashtag_block">
+        <div class="hashtag_block_title"><span>Ommabop toifalar</span></div>
+        <div class="hb_blocks">
+            <div class="hbb_mains">
+                <div class="hbbm_item">
+                    <img src="img/microsoft-office.svg" alt="Microsoft Office" class="hbb_mains_img"><span>Microsoft
+                        Office</span>
+                </div>
+            </div>
+            <div class="hbb_mains">
+                <div class="hbbm_item">
+                    <img src="img/html.svg" alt="HTML" class="hbb_mains_img"><span>HTML</span>
+                </div>
+            </div>
+            <div class="hbb_mains">
+                <div class="hbbm_item">
+                    <img src="img/python.svg" alt="Python" class="hbb_mains_img"><span>Python</span>
+                </div>
+            </div>
+            <div class="hbb_mains">
+                <div class="hbbm_item">
+                    <img src="img/csharp.svg" alt="C#" class="hbb_mains_img"><span>C#</span>
+                </div>
+            </div>
+            <div class="hbb_mains">
+                <div class="hbbm_item">
+                    <img src="img/wordpress.svg" alt="WordPress" class="hbb_mains_img"><span>WordPress</span>
+                </div>
+            </div>
+            <div class="hbb_mains">
+                <div class="hbbm_item">
+                    <img src="img/word.svg" alt="Word" class="hbb_mains_img"><span>Word</span>
+                </div>
+            </div>
+            <div class="hbb_mains">
+                <div class="hbbm_item">
+                    <img src="img/excel.svg" alt="Excel" class="hbb_mains_img"><span>Excel</span>
+                </div>
+            </div>
+            <div class="hbb_mains">
+                <div class="hbbm_item">
+                    <img src="img/powerpoint.svg" alt="PowerPoint" class="hbb_mains_img"><span>PowerPoint</span>
+                </div>
+            </div>
+            <div class="hbb_mains">
+                <div class="hbbm_item">
+                    <img src="img/java.svg" alt="Java" class="hbb_mains_img"><span>Java</span>
+                </div>
+            </div>
+            <div class="hbb_mains">
+                <div class="hbbm_item">
+                    <img src="img/django.svg" alt="Django" class="hbb_mains_img"><span>Django</span>
+                </div>
+            </div>
+            <div class="hbb_mains">
+                <div class="hbbm_item">
+                    <img src="img/css.svg" alt="CSS" class="hbb_mains_img"><span>CSS</span>
+                </div>
+            </div>
+            <div class="hbb_mains">
+                <div class="hbbm_item">
+                    <img src="img/nodejs02.svg" alt="JavaScript" class="hbb_mains_img"><span>JavaScript</span>
+                </div>
+            </div>
+            <div class="hbb_mains">
+                <div class="hbbm_item">
+                    <img src="img/mysql.svg" alt="MySQL" class="hbb_mains_img"><span>MySQL</span>
+                </div>
+            </div>
+            <div class="hbb_mains">
+                <div class="hbbm_item">
+                    <img src="img/react.svg" alt="React" class="hbb_mains_img"><span>React JS</span>
+                </div>
+            </div>
+
+            <div class="hbb_mains">
+                <div class="hbbm_item">
+                    <img src="img/php01.svg" alt="PHP" class="hbb_mains_img"><span>PHP</span>
+                </div>
+            </div>
+            <div class="hbb_mains">
+                <div class="hbbm_item">
+                    <img src="img/postgresql.svg" alt="PostgreSQL" class="hbb_mains_img"><span>PostgreSQL</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="map_block">
+        <div class="course_title"><span>Manzil</span></div>
+        <div id="map"></div>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <div class="brand_info">
+                <div class="header_logo">
+                    <img src="img/logo.svg" alt="JETEDU" style="width:150px;border:4px solid #fff;">
+                </div>
+                <div class="bottom_title">
+                    <span>Kelajakni dasturlang !</span>
+                </div>
+
+            </div>
+
+            <div class="footer_menu">
+                <div class="fm_continer">
+                    <a href="#" class="fm_continer_a">Kurslar</a>
+                    <a href="#" class="fm_continer_a">Biz haqimizda</a>
+                    <a href="#" class="fm_continer_a">Manzil</a>
+                </div>
+                <div class="fm_shartlar" style="margin-top: 20px;">
+                    <a href="" style="margin-right: 20px;">Ommaviy oferta</a>
+                    <a href="">Foydalanish shartlari</a>
+                </div>
+            </div>
+
+            <div>
+                <div class="footer_phone">
+                    <a href="tel:+998995019599" class="footer_phone_a">+998 99 501 95 99</span>
+                        <a href="tel:+998995029599" class="footer_phone_a">+998 99 502 95 99</span>
+                </div>
+                <div class="bottom_info">
+                    <span>© 2025 - Barcha huquqlar himoyalangan.</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script>
+        ymaps.ready(init);
+
+        function init() {
+            var myMap = new ymaps.Map("map", {
+                center: [40.097468, 65.377965],
+                zoom: 16,
+                
+            });
+
+            var myPlacemark = new ymaps.Placemark(
+                [40.097468, 65.377965],
+                {
+                    hintContent: 'JET EDUCATION',
+                    balloonContent: '<strong>JET EDUCATION</strong><br>Bu yerda o‘quv markazi joylashgan',
+                    iconContent: 'JET EDUCATION'
+                },
+                {
+                    preset: 'islands#blackStretchyIcon' // 🔥 Qora marker
+                }
+            );
+
+            myMap.geoObjects.add(myPlacemark);
+        }
+
+        const slider = document.querySelector('.course_info_block');
+        let isDown = false, startX = 0, scrollLeft = 0;
+
+        const isScrollable = () => slider.scrollWidth > slider.clientWidth;
+
+        slider.addEventListener('mousedown', (e) => {
+            if (!isScrollable()) return;
+            isDown = true;
+            slider.classList.add('active');
+            const rect = slider.getBoundingClientRect();
+            startX = e.pageX - rect.left;
+            scrollLeft = slider.scrollLeft;
+        });
+
+        ['mouseleave', 'mouseup'].forEach(evt => {
+            slider.addEventListener(evt, () => {
+                isDown = false;
+                slider.classList.remove('active');
+            });
+        });
+
+        slider.addEventListener('mousemove', (e) => {
+            if (!isDown || !isScrollable()) return;
+            e.preventDefault();
+            const rect = slider.getBoundingClientRect();
+            const x = e.pageX - rect.left;
+            const walk = (x - startX) * 1.5;
+            slider.scrollLeft = scrollLeft - walk;
+        });
+    </script>
+</body>
+
+</html>

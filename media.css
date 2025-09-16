@@ -1,0 +1,282 @@
+/* @media screen and (max-width: 900px) {
+    .header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu_block {
+        display: none;
+    }
+
+    .hi_title {
+        font-size: 40px;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .hi_bio {
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .header_banner {
+        background-color: #029648;
+        height: 500px;
+        background-image: url(https://jetedu-telegram-bot.vercel.app/effect_banner3.jpg);
+        background-size: 250%;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+    }
+    .course_info_block{
+        display: none;
+    }
+    .scroll {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 14px;
+        padding-bottom: 20px;
+    }
+
+    .cib_block {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        transition: transform 0.3s ease;
+    }
+
+    .course_info_block::-webkit-scrollbar {
+        display: none;
+    }
+    .cib_block:active {
+        transform: scale(0.97);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menu_block {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu_block {
+        display: none;
+    }
+} */
+
+@media screen and (max-width: 900px) {
+    .header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu_block {
+        display: none;
+    }
+
+    .hi_title {
+        font-size: 40px;
+    }
+
+    .hi_bio {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .header_banner {
+        background-color: #029648;
+        height: 500px;
+        background-image: url(https://jetedu-telegram-bot.vercel.app/effect_banner3.jpg);
+        background-size: 250%;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .course_title {
+        margin: 30px 0;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 5rem;
+        letter-spacing: -.02em;
+        color: #000;
+    }
+
+    .course_block {
+        width: 100%;
+        max-width: 1350px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+
+    /* Mobil: carousel rejimi */
+    .course_info_block {
+        flex-wrap: nowrap;
+        /* qatorga o'ralmasin */
+        overflow-x: auto;
+        /* gorizontal scroll */
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 14px;
+        padding-bottom: 20px;
+        scrollbar-width: none;
+        /* Firefox */
+        scroll-behavior: smooth;
+        /* silliq o'tish */
+    }
+
+    .course_info_block::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Chrome/Safari */
+
+    .cib_block {
+        flex: 0 0 auto;
+        /* eni o‘zgarmas */
+        scroll-snap-align: start;
+        transition: transform 0.3s ease;
+    }
+
+    .cib_block:active {
+        transform: scale(0.97);
+    }
+
+    .reklama_banner {
+        width: 100%;
+        max-width: 1350px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 30px 20px;
+    }
+
+    .reklama_banner_block {
+        width: 100%;
+        height: auto;
+        background-color: #029648;
+        border-radius: 20px;
+        padding: 26px;
+        background-image: url(/img/main.png);
+        background-size: 220%;
+        background-position: 78% 100%;
+        background-repeat: no-repeat;
+        color: #fff;
+    }
+
+    .rbb_title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -.02em;
+    }
+
+    .rbb_text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+        letter-spacing: -.02em;
+        margin: 12px 0 29px;
+        width: 70%;
+    }
+
+    .rbb_button_b {
+        background: #fff;
+        border-radius: 1rem;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 116.3%;
+        padding: 12px 20px;
+        border: none;
+        outline: none;
+        transition: .3s;
+        color: #05793d;
+        cursor: pointer;
+    }
+
+    .hashtag_block {
+        width: 100%;
+        max-width: 1350px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 30px 20px;
+    }
+
+    .hashtag_block_title {
+        font-weight: 700;
+        font-size: 2.6rem;
+        line-height: 3rem;
+        letter-spacing: -.02em;
+        color: #000;
+        margin-bottom: 40px;
+    }
+
+    .hbb_mains {
+        display: inline-block;
+        border: 1px solid #e3e1e1;
+        padding: 10px 20px 10px 20px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        border-radius: 100px;
+        transition: .1s;
+        cursor: pointer;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 30px;
+    }
+
+    .brand_info {
+        margin-bottom: 20px;
+    }
+    .bottom_title{
+        font-size: 24px;
+    }
+
+    .fm_shartlar {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .footer_phone{
+        font-size: 30px;
+    }
+    .bottom_info{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .menu_block {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu_block {
+        display: none;
+    }
+}
