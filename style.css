@@ -304,8 +304,44 @@ body {
     max-height: 680px;
     padding: 24px;
     margin-left: 30px;
+    /* display: grid;
+    gap: 24px; */
+}
+
+.location_info_img_img {
+    width: 300px;
+    border-radius: 8px;
+
+}
+
+.location_info_bio {
     display: grid;
     gap: 24px;
+}
+
+.location_info_bio>* {
+    border-bottom: 1px solid #ddd;
+}
+
+.location_info_bio>*:last-child {
+    border-bottom: none;
+}
+
+
+
+.location_info_muljal,
+.location_info_ish_vaqti,
+.location_info_telefon {
+    display: flex;
+    flex-direction: column;
+    /* border-bottom: 1px solid #EAECF0; */
+}
+
+.li_title {
+    margin: 0;
+    color: #667085;
+    font-weight: 500;
+    line-height: 28px;
 }
 
 footer {
